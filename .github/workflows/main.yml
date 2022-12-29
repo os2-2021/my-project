@@ -12,10 +12,9 @@ jobs:
     runs-on: Ubuntu-latest
 
     steps:
-      - name: 'Testing Github action'
-        run: pwd
+      - uses : actions/checkout@v3
 
-      - name: 'Testing printing'
-        run: echo shrouk
+      - name: 'Login to Docker hub'
+        run: docker login --username shrouk716 --password dckr_pat_RXl6fxp3dlVPYVwBo9Mtt7wwYLA
 
       
